@@ -1,4 +1,8 @@
 package com.currencyconvertor.mydemo.ui
 
-class ConvertorFragment {
+import com.currencyconvertor.mydemo.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+class ConvertorFragment : BaseFragment() {
 }

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CurrencyConvertor</string>
+    <string name="loading">Please wait…</string>
+    <string name="no_internet">No internet available, please check your connected WIFi or Data</string>
+</resources>
