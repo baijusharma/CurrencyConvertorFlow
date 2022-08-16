@@ -34,6 +34,10 @@ android {
         jvmTarget = '1.8'
         freeCompilerArgs += '-opt-in=kotlin.RequiresOptIn'
     }
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
 }
 
 dependencies {
@@ -66,7 +70,7 @@ dependencies {
     // Moshi
     implementation "com.squareup.retrofit2:converter-moshi:$retrofit_converter_moshi_version"
     implementation "com.squareup.moshi:moshi:$moshi_version"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+  //  kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
 
 
     // Local Unit Tests

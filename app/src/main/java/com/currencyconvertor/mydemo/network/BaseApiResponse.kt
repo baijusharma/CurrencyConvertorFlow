@@ -2,7 +2,7 @@ package com.currencyconvertor.mydemo.network
 
 import retrofit2.Response
 
-class BaseApiResponse {
+abstract class BaseApiResponse {
 
     suspend fun <T> safeApiCall(apiCall: suspend () -> Response<T>): NetworkResponse<T> {
         try {

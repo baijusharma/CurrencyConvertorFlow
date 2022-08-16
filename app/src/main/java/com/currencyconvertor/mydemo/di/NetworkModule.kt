@@ -1,5 +1,6 @@
 package com.currencyconvertor.mydemo.di
 
+import com.currencyconvertor.mydemo.network.ApiService
 import com.currencyconvertor.mydemo.utils.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -56,7 +57,7 @@ object NetworkModule {
             .build()
     }
 
-   /* @Singleton
+    @Singleton
     @Provides
-    fun provideApiService(retrofit: Retrofit): ApiService = retrofit.create(ApiService::class.java)*/
+    fun provideApiService(retrofit: Retrofit): ApiService = retrofit.create(ApiService::class.java)
 }
