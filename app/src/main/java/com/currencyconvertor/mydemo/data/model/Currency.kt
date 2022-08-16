@@ -6,8 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "currency")
 data class Currency(@PrimaryKey
-                    @ColumnInfo(name = "column_currencyCode")
+                    @ColumnInfo(name = "currencyCode")
                     val currencyCode: String,
-                    @ColumnInfo(name = "column_exchangeRate")
-                    val exchangeRate: Double) {
-}
+                    @ColumnInfo(name = "exchangeRate")
+                    val exchangeRate: Double)
